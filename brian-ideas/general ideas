@@ -18,3 +18,8 @@ longer-term ideas
 find rules by trying out dyads, triads, etc (verticalities)
 then see how dyad to dyad changes things and could point toward adaptation of the framework from vertical to 2D
 wait until the end to fine-tune the optimizations
+
+
+other thoughts
+node costs should be stored in hard-coded memory to avoid repeated computation.
+edge costs could be stored in a hard-coded array for ease of computation? there are only probably something like 100^2

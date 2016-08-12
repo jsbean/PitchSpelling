@@ -21,5 +21,8 @@ wait until the end to fine-tune the optimizations
 
 
 other thoughts
-node costs should be stored in hard-coded memory to avoid repeated computation.
-edge costs could be stored in a hard-coded array for ease of computation? there are only probably something like 100^2
+there are 189 different spellings possible (7 letter names * 9 qt symbols * 3 et states) [175 if you don't allow x-up or bb-down]
+this means it's computationally reasonable to calculate node cost rules on every spelling (assuming cost is a 16-bit int, that's less than 1 kb memory + a few additions/multiplications for the indexing function)
+it might also be computationally reasonable to calculate edge cost rules on every possible edge
+  this would be an upper triangular matrix (189x189) with unique elements (189 * 190) / 2 = 17955
+  it could be easiliy stored in memory as 1D or 2D array

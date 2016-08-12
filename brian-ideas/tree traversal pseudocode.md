@@ -1,10 +1,11 @@
-exploreTree(
-   Array<SpelledPitchClass> spcs,
-   int nodeAndEdgeCost, 
-   Array<SpelledPitchClass> solution, 
-   int thresh,
-   Array<PitchClass> pcs
-)
+> exploreTree(
+>    Array<SpelledPitchClass> spcs,
+>    int nodeAndEdgeCost, 
+>    Array<SpelledPitchClass> solution, 
+>    int thresh,
+>    Array<PitchClass> pcs
+> )
+
 
 // NB I'm using "cost" right now to refer to the overall cost. obviously further optimization
 // would involve breaking that down into non-graph- and graph-level costs and keeping the

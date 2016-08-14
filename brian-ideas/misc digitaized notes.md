@@ -17,9 +17,9 @@ The rough vs fine tuning parameters could be generalized, but let's solve one pr
 
 #Interval naming algorithm (formalized)
 
-##normalizeInputs :: SpelledPitchClass -> SpelledPitchClass -> (SpelledPitchClass, SpelledPitchClass)
+###normalizeInputs :: SpelledPitchClass -> SpelledPitchClass -> (SpelledPitchClass, SpelledPitchClass)
 
-```
+
 for a SpelledPitchClass X, let Xn, Xl, Xq, Xe be the pc-num, note letter, q-tone spelling, and e-tone spelling respectively of X
 let A and B be two SpelledPitchClasses
 
@@ -28,11 +28,11 @@ if Bl - Al mod 7 > Al - Bl mod 7
 else
   return (A, B)
 end
-```
 
-##nameInterval :: SpelledPitchClass -> SpelledPitchClass -> (Ordinal, Quality)
 
-```
+###nameInterval :: SpelledPitchClass -> SpelledPitchClass -> (Ordinal, Quality)
+
+
 let *A* and *B* be two SpelledPitchClasses
 then let the SpelledPitchClass pair (*A'*, *B'*) be *normalizeInputs(A, B)*
 

@@ -25,18 +25,20 @@ Rules return a cost value, [0,1], which is later scaled by the program to allow 
 * 1 if **A<sub>q</sub>** is `bb` or `x`
 * 0 otherwise
 
-### R<sub>n2</sub>: avoid bad enharmonics
-* 1 if (**A<sub>l</sub>**, **A<sub>q</sub>**) = `(B,#)` or `(C,b)` or `(E,#)` or `(F,b)`
+### R<sub>n2</sub>: Bad enharmonics
+* 1 if (**A<sub>l</sub>**, **A<sub>q</sub>**) = `(b, sharp)` or `(c, flat)` or `(e, sharp)` or `(f, flat)`
 * 0 otherwise
 
 _maybe this should use b, db, and bb instead of just b--this would overlap with other rules but maybe this is a good thing?_
 
-### R<sub>n3</sub>: avoid combining quarter tones and eighth tones
-* 1 if Aq is a quarter tone and Ae is not 0
+### R<sub>n3</sub>: Combining quarter tones and eighth tones
+* 1 if **A<sub>q res</sub>** `== 0.5` and **A<sub>e</sub>** `!= 0`
 * 0 otherwise
 
-### R<sub>n4</sub>: avoid three-quarter-tone symbols
-* 1 if Aq is db or #t
+> In the case of an eighth-tone resolution spelling, prefer half-step accidental body values over quarter-step accidental body values. 
+
+### R<sub>n4</sub>: Three-quarter-step values
+* 1 if **A<sub>q</sub>** is `three-quarter-flat` or `three-quarter-sharp`
 * 0 otherwise
 
 <a id="edge-level"></a>

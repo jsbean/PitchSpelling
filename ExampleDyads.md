@@ -35,5 +35,5 @@
 | -- | c three-quarter-sharp | - |
 | d double-flat | d quarter-flat | unison |
 | -- | c three-quarter-sharp | reacharound  |
-| b sharp | d quarter-flat | |
+| b sharp | d quarter-flat | dim/aug |
 | -- | c three-quarter-sharp | - |

@@ -107,7 +107,7 @@ The following are examples of dyads of spelled pitches, for the purpose of gener
 | -- | c quarter-sharp up | dim/unison |
 | -- | d flat down | eighth-tone direction |
 | -- | d three-quarter-flat up | unison |
-| -- | b three-quarter-sharp up | |
+| -- | b three-quarter-sharp up | reacharound |
 | c quarter-sharp down | c sharp down | unison |
 | -- | c quarter-sharp up | unison, eighth-tone direction |
 | -- | d flat down | unison |

@@ -6,14 +6,14 @@ The following are examples of dyads of spelled pitches, for the purpose of gener
 | -- | c quarter-sharp down | unison |
 | -- | d three-quarter-flat down | -|
 | --  | d bb up | - |
-| -- | b sharp up | reacharound |
+| -- | b sharp up | [reacharound](PitchSetSpellingRules.md#crossovers/reacharound) |
 | -- | b three-quarter-sharp down | reacharound |
 | d double-flat | c natural up | reacharound |
-| -- | c quarter-sharp-down 	| reacharound, flat/sharp |
+| -- | c quarter-sharp-down 	| reacharound, [flat/sharp](PitchSetSpellingRules.md#quarter-step-incompatibility) |
 | -- | d three-quarter-flat down | unison |
 | -- | d double-flat up | unison |
 | -- | b sharp up	| reacharound, dim/aug |
-| -- | b three-quarter-sharp down | reacharound, dim/aug |
+| -- | b three-quarter-sharp down | reacharound, [dim/aug](PitchSetSpellingRules.md#augmented-diminished) |
 | b sharp | c natural up | - |
 | -- | c quarter-sharp down | - |
 | -- | d three-quarter-flat down | flat/sharp |
@@ -24,105 +24,111 @@ The following are examples of dyads of spelled pitches, for the purpose of gener
 
 | 0.0 | 1.0 | Rule broken |
 | --- | --- | --- |
-| c natural | c sharp | unison |
-| -- | b double-sharp | reacharound |
+| c natural | c sharp | [unison](PitchSetSpellingRules.md#unisons) |
+| -- | b double-sharp | [reacharound](PitchSetSpellingRules.md#crossovers/reacharound) |
 | -- | d flat | - |
-| d double-flat | c sharp | reacharound |
-| -- | b double-sharp | dim/aug, reacharound |
+| d double-flat | c sharp | reacharound, [flat/sharp](PitchSetSpellingRules.md#quarter-step-incompatibility) |
+| -- | b double-sharp | [dim/aug](PitchSetSpellingRules.md#augmented-diminished), reacharound, flat/sharp |
 | -- | d flat | unison |
 | b sharp | c sharp | - |
 | -- | b double-sharp | unison |
-| -- | d flat | dim/aug |
+| -- | d flat | dim/aug, flat/sharp |
 
 | 0.0 | 1.5 | Rule broken |
 | --- | --- | --- |
 | c natural | d quarter-flat | - |
-| -- | c three-quarter-sharp | unison |
+| -- | c three-quarter-sharp | [unison](PitchSetSpellingRules.md#unisons) |
 | d double-flat | d quarter-flat | unison |
-| -- | c three-quarter-sharp | reacharound  |
-| b sharp | d quarter-flat | dim/aug |
+| -- | c three-quarter-sharp | [reacharound](PitchSetSpellingRules.md#crossovers/reacharound), [flat/sharp](PitchSetSpellingRules.md#quarter-step-incompatibility)  |
+| b sharp | d quarter-flat | [dim/aug](PitchSetSpellingRules.md#augmented-diminished), [flat/sharp](PitchSetSpellingRules.md#quarter-step-incompatibility) |
 | -- | c three-quarter-sharp | - |
 
 | 0.0 | 1.75 | Rule broken |
 | --- | ---  | --- |
 | c natural | d natural down | - |
 | -- | d quarter-flat up | - |
-| -- | c three-quarter-sharp up | unison |
+| -- | c three-quarter-sharp up | [unison](PitchSetSpellingRules.md#unisons) |
 | -- | c double-sharp down | unison |
 | -- | e double-flat down | - |
 | d double-flat | d natural down | unison |
 | -- | d quarter-flat up | unison |
-| -- | c three-quarter-sharp up | dim/aug |
-| -- | c double-sharp down | dim/aug |
+| -- | c three-quarter-sharp up | [dim/aug](PitchSetSpellingRules.md#augmented-diminished), [flat/sharp](PitchSetSpellingRules.md#quarter-step-incompatibility) |
+| -- | c double-sharp down | dim/aug, flat/sharp |
 | -- | e double-flat down | - |
 | b sharp | d natural down | dim/aug |
-| -- | d quarter-flat up | dim/aug |
+| -- | d quarter-flat up | dim/aug, flat/sharp |
 | -- | c three-quarter-sharp up | - |
 | -- | c double-sharp down | - |
-| -- | e double-flat down | dim/aug |
+| -- | e double-flat down | dim/aug, flat/sharp |
 
 | 0.0 | 2.0 | Rule broken |
 | --- | --- | --- |
 | c natural | d natural | - |
-| -- | c double-sharp | unison |
-| -- | e double-flat | dim/aug |
+| -- | c double-sharp | [unison](PitchSetSpellingRules.md#unisons) |
+| -- | e double-flat | [dim/aug](PitchSetSpellingRules.md#augmented-diminished) |
 | d double-flat | d natural | unison |
-| -- | c double-sharp | dim/aug |
+| -- | c double-sharp | dim/aug, [reacharound](PitchSetSpellingRules.md#crossovers/reacharound), [flat/sharp](PitchSetSpellingRules.md#quarter-step-incompatibility) |
 | -- | e double-flat | - |
 | b sharp | d natural | dim/aug |
 | -- | c double-sharp | - |
-| -- | e double-flat | dim/aug |
+| -- | e double-flat | dim/aug, flat/sharp |
 
 | 0.25 | 0.5 | Rule broken |
 | ---  | --- | --- |
 | b sharp up | c quarter-sharp | - |
-| -- | d three-quarter-flat | dim/aug |
-| -- | b three-quarter-sharp | unison |
+| -- | d three-quarter-flat | [dim/aug](PitchSetSpellingRules.md#augmented-diminished), [flat/sharp](PitchSetSpellingRules.md#quarter-step-incompatibility) |
+| -- | b three-quarter-sharp | [unison](PitchSetSpellingRules.md#unisons) |
 | b three-quarter-sharp down | c quarter-sharp | - |
-| -- | d three-quarter-flat | dim/aug |
+| -- | d three-quarter-flat | dim/aug, flat/sharp |
 | -- | b three-quarter-sharp | unison |
 | c natural up | c quarter-sharp | unison |
 | -- | d three-quarter-flat | - |
-| -- | b three-quarter-sharp | reacharound |
+| -- | b three-quarter-sharp | [reacharound](PitchSetSpellingRules.md#crossovers/reacharound) |
 | c quarter-sharp down | c quarter-sharp | unison |
-| -- | d three-quarter-flat | dim/aug |
+| -- | d three-quarter-flat | dim/aug, flat/sharp |
 | -- | b three-quarter-sharp | reacharound |
-| d double-flat down | c quarter-sharp | reacharound |
+| d double-flat down | c quarter-sharp | reacharound, flat/sharp |
 | -- | d three-quarter-flat | unison |
-| -- | b three-quarter-sharp | reacharound |
-| d three-quarter-flat down | c quarter-sharp | reacharound |
+| -- | b three-quarter-sharp | reacharound, flat/sharp |
+| d three-quarter-flat down | c quarter-sharp | reacharound, flat/sharp |
 | -- | d three-quarter-flat | unison |
-| -- | b three-quarter-sharp | reacharound |
+| -- | b three-quarter-sharp | reacharound, flat/sharp |
 
 | 0.25 | 0.75 | Rule broken |
 | ---  | --- | --- |
-| b sharp up | c sharp down | eighth-tone direction |
-| -- | c quarter-sharp up | dim/aug |
+| b sharp up | c sharp down | [eighth-tone direction](PitchSetSpellingRules.md#eighth-step-incompatibility) |
+| -- | c quarter-sharp up | [dim/aug](PitchSetSpellingRules.md#augmented-diminished) |
 | -- | d flat down | dim/aug, eighth-tone direction |
-| -- | d three-quarter-flat up | dim/aug |
-| -- | b three-quarter-sharp up | unison |
+| -- | d three-quarter-flat up | dim/aug, flat/sharp |
+| -- | b three-quarter-sharp up | [unison](PitchSetSpellingRules.md#unisons) |
+| -- | b double-sharp down | 8t direction, unison |
 | b three-quarter-sharp down | c sharp down | - |
 | -- | c quarter-sharp up | dim/aug, eighth-tone direction |
-| -- | d flat down | unison |
-| -- | d three-quarter-flat up | unison, eighth-tone direction |
+| -- | d flat down | unison, flat/sharp |
+| -- | d three-quarter-flat up | unison, eighth-tone direction, flat/sharp |
 | -- | b three-quarter-sharp up | unison, eighth-tone direction |
+| -- | b double-sharp down | 8t direction, unison |
 | c natural up | c sharp down | unison, eighth-tone direction |
-| -- | c quarter-sharp up | dim/unison |
+| -- | c quarter-sharp up | dim/aug, unison |
 | -- | d flat down | eighth-tone direction |
 | -- | d three-quarter-flat up | unison |
-| -- | b three-quarter-sharp up | reacharound |
+| -- | b three-quarter-sharp up | [reacharound](PitchSetSpellingRules.md#crossovers/reacharound) |
+| -- | b double-sharp down | 8t direction, reacharound |
 | c quarter-sharp down | c sharp down | unison |
 | -- | c quarter-sharp up | unison, eighth-tone direction |
-| -- | d flat down | unison |
-| -- | d three-quarter-flat up | eighth-tone direction |
+| -- | d flat down | unison, flat/sharp |
+| -- | d three-quarter-flat up | eighth-tone direction, flat/sharp |
 | -- | b three-quarter-sharp up | reacharound, eighth-tone direction |
-| d double-flat down | c sharp down | reacharound |
-| -- | c quarter-sharp up | reacharound, eighth-tone direction |
+| -- | b double-sharp down | reacharound |
+| d double-flat down | c sharp down | reacharound, flat/sharp |
+| -- | c quarter-sharp up | reacharound, eighth-tone direction, flat/sharp |
 | -- | d flat down | unison |
 | -- | d three-quarter-flat up | unison, eighth-tone direction |
-| -- | b three-quarter-sharp up | reacharound, dim/aug, eighth-tone direction |
-| d three-quarter-flat down | c sharp down | reacharound |
-| -- | c quarter-sharp up | reacharound, eighth-tone direction |
+| -- | b three-quarter-sharp up | reacharound, dim/aug, eighth-tone direction, flat/sharp |
+| -- | b double-sharp down | reacharound, dim/aug, flat/sharp |
+| d three-quarter-flat down | c sharp down | reacharound, flat/sharp |
+| -- | c quarter-sharp up | reacharound, eighth-tone direction, flat/sharp |
 | -- | d flat down | unison |
 | -- | d three-quarter-flat up | unison, eighth-tone direction |
-| -- | b three-quarter-sharp up | reacharound, dim/aug, eighth-tone direction |
+| -- | b three-quarter-sharp up | reacharound, dim/aug, eighth-tone direction, flat/sharp |
+| -- | b double-sharp down | reacharound, dim/aug, flat/sharp |

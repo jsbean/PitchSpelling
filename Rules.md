@@ -19,11 +19,12 @@ Rules return a cost value, [0,1], which is later scaled by the program to allow 
 
 <a id="node-level"></a>
 # Node-level rules
-#### `(A: SpelledPitchClass) -> Float`
 
 The following rules are applied to single `SpelledPitchClass` values, without consideration of the surrounding harmonic or melodic context.
 
-> These rules will most definitely have user-definable weighting (`prefer no double-sharps`, etc.).
+> These rules will most probably have user-definable weighting (`prefer no double-sharps`, etc.).
+
+**Signature:** **`(A: SpelledPitchClass) -> Float`**
 
 <a id="double-sharps-double-flats"></a>
 ### R<sub>n1</sub>: Double sharps / double flats
@@ -51,9 +52,10 @@ The following rules are applied to single `SpelledPitchClass` values, without co
 
 <a id="edge-level"></a>
 # Edge-level rules
-#### `(A: SpelledPitchClass) -> (B: SpelledPitchClass) -> Float`
 
 The following rules are applied to dyads of `SpelledPitchClass` values.
+
+**Signature:** **`(A: SpelledPitchClass) -> (B: SpelledPitchClass) -> Float`**
 
 <a id="unisons"></a>
 ### R<sub>e1</sub>: Unisons
@@ -78,7 +80,10 @@ _not sure how to implement this one, but I think you have to include checks on t
 
 <a id="graph-level"></a>
 # Graph-level rules
-#### `(G: [SpelledPitchClass]) -> Float`
+
+The following rules are applied to the entire graph, in its current state of construction.
+
+**Signature:** **`(G: [SpelledPitchClass]) -> Float`**
 
 <a id="quarter-step-incompatibility"></a>
 ### R<sub>g1</sub>: Quarter step spellings in opposite directions

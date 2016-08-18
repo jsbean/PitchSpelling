@@ -41,7 +41,7 @@ The following rules are applied to single `SpelledPitchClass` values, without co
 > Consider merging with [**R<sub>n1</sub>: Double sharps / double flats**](#double-sharps-double-flats)
 
 <a id="combining-quarter-tones-eighth-tones"></a>
-### R<sub>n,3</sub>: Combining quarter tones and eighth tones
+### R<sup>n</sup><sub>3</sub>: Combining quarter tones and eighth tones
 * `1` if **A<sub>quarterStep resolution</sub>** `== 0.5` and **A<sub>eighthStep</sub>** `!= 0`
 * `0` otherwise
 

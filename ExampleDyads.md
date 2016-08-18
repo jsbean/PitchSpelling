@@ -40,18 +40,30 @@
 
 | 0.0 | 1.75 | Rule broken |
 | --- | ---  | --- |
-| c natural | d down | - |
+| c natural | d natural down | - |
 | -- | d quarter-flat up | - |
 | -- | c three-quarter-sharp up | unison |
 | -- | c double-sharp down | unison |
 | -- | e double-flat down | - |
-| d double-flat | d down | unison |
+| d double-flat | d natural down | unison |
 | -- | d quarter-flat up | unison |
 | -- | c three-quarter-sharp up | dim/aug |
 | -- | c double-sharp down | dim/aug |
 | -- | e double-flat down | - |
-| b sharp | d down | dim/aug |
+| b sharp | d natural down | dim/aug |
 | -- | d quarter-flat up | dim/aug |
 | -- | c three-quarter-sharp up | - |
 | -- | c double-sharp down | - |
 | -- | e double-flat down | dim/aug |
+
+| 0.0 | 2.0 | Rule broken |
+| --- | --- | --- |
+| c natural | d natural | - |
+| -- | c double-sharp | unison |
+| -- | e double-flat | dim/aug |
+| d double-flat | d natural | unison |
+| -- | c double-sharp | dim/aug |
+| -- | e double-flat | - |
+| b sharp | d natural | dim/aug |
+| -- | c double-sharp | - |
+| -- | e double-flat | dim/aug |

@@ -73,10 +73,14 @@ _not sure how to implement this one, but I think you have to include checks on t
 # Graph-level rules
 #### `[SpelledPitchClass] -> Float`
 
-### R<sub>g1</sub>: avoid rough spellings in opposite directions
-* `1` if for any `A, B in S`, `sign(Aq) * sign(Bq) == -1`
+### R<sub>g1</sub>: Quarter step spellings in opposite directions
+* `1` if for any `A, B in S`, sign(**A<sub>quarterStep</sub>**) * sign(**B<sub>quarterStep</sub>**) = -1
 * `0` otherwise
 
-### R<sub>g2</sub>: avoid eighth tone direction conflict
-* `1` if for any `A, B in S`, `sign(Ae) * sign(Be) == -1`
+> Avoid `sharp` / `flat` direction mixes
+
+### R<sub>g2</sub>: Eighth step direction conflict
+* `1` if for any `A, B in S`, sign(**A<sub>eighthStep</sub>**) * sign(**B<sub>eighthStep</sub>**) = -1
 * `0` otherwise
+
+> Avoid `up` / `down` direction mixes

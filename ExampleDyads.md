@@ -5,13 +5,26 @@
 | --                      | d three-quarter-flat down | -                       |
 | --                      | d bb up                 | -                       |
 | -- 					  | b sharp up              | reacharound             |
-| d bb                    | c natural up 		    | reacharound 			  |
+| d double-flat                    | c natural up 		    | reacharound 			  |
 | -- 					  | c quarter-sharp-down 	| reacharound, flat/sharp |
 | --  					  | d three-quarter-flat down | unison				  |
-| --					  | d bb up					| unison 				  |
+| --					  | d double-flat up					| unison 				  |
 | --					  | b sharp up				| reacharound, dim/aug    |
 | b sharp 				  | c natural up			| -						  |
-| --                      | c quarterSharp down     | -                       |
+| --                      | c quarter-sharp down     | -                       |
 | --                      | d three-quarter-flat down | flat/sharp              |
-| -- 					  | d bb up                 | flat/sharp, dim/aug     |
+| -- 					  | d double-flat up                 | flat/sharp, dim/aug     |
 | -- 					  | b sharp up              | unison                  |
+
+
+|             0.0           |            1            | Rule broken          |
+|-------------------------|-------------------------|-------------------------|
+| c natural               | c sharp            | unison                  |
+| --               | b double-sharp            | reacharound                  |
+| --               | d flat            | -                  |
+| d double-flat               | c sharp            | reacharound                  |
+| --               | b double-sharp            | dim/aug                  |
+| --               | d flat            | unison                  |
+| b sharp               | c sharp            | - |
+| --               | b double-sharp            | unison                  |
+| --               | d flat            | dim/aug                  |

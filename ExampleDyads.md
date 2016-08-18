@@ -43,12 +43,15 @@
 | c natural | d down | - |
 | -- | d quarter-flat up | - |
 | -- | c three-quarter-sharp up | unison |
+| -- | c double-sharp down | unison |
 | -- | e double-flat down | - |
 | d double-flat | d down | unison |
 | -- | d quarter-flat up | unison |
 | -- | c three-quarter-sharp up | dim/aug |
+| -- | c double-sharp down | dim/aug |
 | -- | e double-flat down | - |
 | b sharp | d down | dim/aug |
 | -- | d quarter-flat up | dim/aug |
 | -- | c three-quarter-sharp up | - |
+| -- | c double-sharp down | - |
 | -- | e double-flat down | dim/aug |

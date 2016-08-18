@@ -16,7 +16,8 @@ Rules can be applied at the [**node-**](#node-level), [**edge-**](#edge-level), 
 Rules return a cost value, [0,1], which is later scaled by the program to allow rule weighting and user-controlled preferences.
 
 <a id="node-level"></a>
-# Node-level rules : SpelledPitchClass -> float
+# Node-level rules: 
+#### `SpelledPitchClass -> Float`
 
 __notation: RNx(A)__
 

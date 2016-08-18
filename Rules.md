@@ -17,7 +17,7 @@ Rules return a cost value, [0,1], which is later scaled by the program to allow 
 
 <a id="node-level"></a>
 # Node-level rules: 
-#### `SpelledPitchClass -> Float`
+> `SpelledPitchClass -> Float`
 
 __notation: RNx(A)__
 

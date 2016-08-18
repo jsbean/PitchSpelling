@@ -23,7 +23,7 @@ Rules return a cost value, [0,1], which is later scaled by the program to allow 
 
 The following rules are applied to single `SpelledPitchClass` values, without consideration of the surrounding harmonic or melodic context.
 
-> These rules will most definitely have user-definable weighting (`prefer no double-sharps, etc.`).
+> These rules will most definitely have user-definable weighting (`prefer no double-sharps`, etc.).
 
 ### R<sub>n1</sub>: Double sharps / double flats
 * `1` if **A<sub>quarterStep</sub>** is `double-flat` or `double-sharp`

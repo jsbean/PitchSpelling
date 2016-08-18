@@ -21,8 +21,12 @@ Rules return a cost value, [0,1], which is later scaled by the program to allow 
 # Node-level rules
 ### `(SpelledPitchClass) -> Float`
 
+The following rules are applied to single `SpelledPitchClass` values, without consideration of the surrounding harmonic or melodic context.
+
+> These rules will most definitely have user-definable weighting (`prefer no double-sharps, etc.`).
+
 ### R<sub>n1</sub>: Double sharps / double flats
-* 1 if **A<sub>q</sub>** is `bb` or `x`
+* 1 if **A<sub>q</sub>** is `double-flat` or `double-sharp`
 * 0 otherwise
 
 ### R<sub>n2</sub>: Bad enharmonics

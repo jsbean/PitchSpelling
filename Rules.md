@@ -35,7 +35,7 @@ The following rules are applied to single `SpelledPitchClass` values, without co
 * `1` if (**A<sub>letterName</sub>**, **A<sub>quarterStep</sub>**) = `(b, sharp)` or `(c, flat)` or `(e, sharp)` or `(f, flat)`
 * `0` otherwise
 
-> Consider merging with [**R<sub>n1</sub>: Double sharps / double flats**](double-sharps-double-flats)
+> Consider merging with [**R<sub>n1</sub>: Double sharps / double flats**](#double-sharps-double-flats)
 
 <a id="combining-quarter-tones-eighth-tones"></a>
 ### R<sub>n3</sub>: Combining quarter tones and eighth tones

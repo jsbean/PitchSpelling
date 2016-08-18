@@ -88,14 +88,14 @@ The following rules are applied to the entire graph, in its current state of con
 **Signature:** **`(G: [SpelledPitchClass]) -> Float`**
 
 <a id="quarter-step-incompatibility"></a>
-### R<sub>g1</sub>: Quarter step spellings in opposite directions
+### R<sub>g1</sub>: Conflicting quarter-step directionality
 * `1` if for any `A, B in S`, sign(**A<sub>quarterStep</sub>**) * sign(**B<sub>quarterStep</sub>**) = -1
 * `0` otherwise
 
 > Avoid `sharp` / `flat` direction mixes
 
 <a id="eighth-step-incompatibility"></a>
-### R<sub>g2</sub>: Eighth step direction conflict
+### R<sub>g2</sub>: Conflicting eighth-step directionality
 * `1` if for any `A, B in S`, sign(**A<sub>eighthStep</sub>**) * sign(**B<sub>eighthStep</sub>**) = -1
 * `0` otherwise
 

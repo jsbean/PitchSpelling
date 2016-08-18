@@ -1,3 +1,5 @@
+The following are examples of dyads of spelled pitches, for the purpose of generating the rules that can be applied globally. 
+
 | 0.0 | 0.25 | Rule broken |
 | --- | ---  | --- |
 | c natural | c natural up  | unison |
@@ -88,3 +90,36 @@
 | d three-quarter-flat down | c quarter-sharp | reacharound |
 | -- | d three-quarter-flat | unison |
 | -- | b three-quarter-sharp | reacharound |
+
+| 0.25 | 0.75 | Rule broken |
+| ---  | --- | --- |
+| b sharp up | c sharp down | eighth-tone direction |
+| -- | c quarter-sharp up | dim/aug |
+| -- | d flat down | dim/aug, eighth-tone direction |
+| -- | d three-quarter-flat up | dim/aug |
+| -- | b three-quarter-sharp up | unison |
+| b three-quarter-sharp down | c sharp down | - |
+| -- | c quarter-sharp up | dim/aug, eighth-tone direction |
+| -- | d flat down | unison |
+| -- | d three-quarter-flat up | unison, eighth-tone direction |
+| -- | b three-quarter-sharp up | unison, eighth-tone direction |
+| c natural up | c sharp down | unison, eighth-tone direction |
+| -- | c quarter-sharp up | dim/unison |
+| -- | d flat down | eighth-tone direction |
+| -- | d three-quarter-flat up | unison |
+| -- | b three-quarter-sharp up | |
+| c quarter-sharp down | c sharp down | unison |
+| -- | c quarter-sharp up | unison, eighth-tone direction |
+| -- | d flat down | unison |
+| -- | d three-quarter-flat up | eighth-tone direction |
+| -- | b three-quarter-sharp up | reacharound, eighth-tone direction |
+| d double-flat down | c sharp down | reacharound |
+| -- | c quarter-sharp up | reacharound, eighth-tone direction |
+| -- | d flat down | unison |
+| -- | d three-quarter-flat up | unison, eighth-tone direction |
+| -- | b three-quarter-sharp up | reacharound, dim/aug, eighth-tone direction |
+| d three-quarter-flat down | c sharp down | reacharound |
+| -- | c quarter-sharp up | reacharound, eighth-tone direction |
+| -- | d flat down | unison |
+| -- | d three-quarter-flat up | unison, eighth-tone direction |
+| -- | b three-quarter-sharp up | reacharound, dim/aug, eighth-tone direction |

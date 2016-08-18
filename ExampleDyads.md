@@ -2,7 +2,7 @@ The following are examples of dyads of spelled pitches, for the purpose of gener
 
 | 0.0 | 0.25 | Rule broken |
 | --- | ---  | --- |
-| c natural | c natural up  | unison |
+| c natural | c natural up  | [unison](PitchSetSpellingRules.md#unisons) |
 | -- | c quarter-sharp down | unison |
 | -- | d three-quarter-flat down | -|
 | --  | d bb up | - |

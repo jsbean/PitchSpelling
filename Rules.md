@@ -17,7 +17,7 @@ Rules return a cost value, [0,1], which is later scaled by the program to allow 
 
 <a id="node-level"></a>
 # Node-level rules: 
-> `SpelledPitchClass -> Float`
+`(SpelledPitchClass) -> Float`
 
 __notation: RNx(A)__
 
@@ -40,7 +40,8 @@ _maybe this should use b, db, and bb instead of just b--this would overlap with 
 * 0 otherwise
 
 <a id="edge-level"></a>
-#edge-level rules : SpelledPitchClass -> SpelledPitchClass -> float
+# Edge-level rules :
+`(SpelledPitchClass) -> (SpelledPitchClass) -> Float`
 
 __notation: REx(A,B)__
 
@@ -59,7 +60,8 @@ _not sure how to implement this one, but I think you have to include checks on t
 * 0 if (A,B) is not agumented or diminished
 
 <a id="graph-level"></a>
-#graph-level rules : [SpelledPitchClass] -> float
+# Graph-level rules
+`[SpelledPitchClass] -> Float`
 
 __notation: RGx(S)__
 

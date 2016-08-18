@@ -76,7 +76,7 @@ The following rules are applied to dyads of `SpelledPitchClass` values.
 _not sure how to implement this one, but I think you have to include checks on the quarter-tone directions_
 
 <a id="augmented-diminished"></a>
-### R<sub>e3</sub>: avoid augmented/diminished intervals
+### R<sub>e3</sub>: Augmented / diminished intervals
 * `0.2 * Interval(A,B).quality.degree`
 * `0` if `Interval(A,B).quality` is not `augmented` or `diminished`
 

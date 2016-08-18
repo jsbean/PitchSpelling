@@ -1,4 +1,6 @@
-# General definition
+# Eighth-step resolution pitch set spelling rules
+
+## General definition
 
 Rules can be applied at the [**node-**](#node-level), [**edge-**](#edge-level), or [**graph-**](#graph-level)level:
 
@@ -18,7 +20,7 @@ Rules return a cost value, [0,1], which is later scaled by the program to allow 
 ---
 
 <a id="node-level"></a>
-# Node-level rules
+## Node-level rules
 
 The following rules are applied to single `SpelledPitchClass` values, without consideration of the surrounding harmonic or melodic context.
 
@@ -51,7 +53,7 @@ The following rules are applied to single `SpelledPitchClass` values, without co
 * `0` otherwise
 
 <a id="edge-level"></a>
-# Edge-level rules
+## Edge-level rules
 
 The following rules are applied to dyads of `SpelledPitchClass` values.
 
@@ -79,7 +81,7 @@ _not sure how to implement this one, but I think you have to include checks on t
 * `0` if `Interval(A,B).quality` is not `augmented` or `diminished`
 
 <a id="graph-level"></a>
-# Graph-level rules
+## Graph-level rules
 
 The following rules are applied to the entire graph, in its current state of construction.
 

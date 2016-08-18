@@ -17,7 +17,7 @@
 | -- 					  | b sharp up              | unison                  |
 
 
-|             0.0           |            1            | Rule broken          |
+|             0.0           |            1.0            | Rule broken          |
 |-------------------------|-------------------------|-------------------------|
 | c natural               | c sharp            | unison                  |
 | --               | b double-sharp            | reacharound                  |
@@ -28,3 +28,12 @@
 | b sharp               | c sharp            | - |
 | --               | b double-sharp            | unison                  |
 | --               | d flat            | dim/aug                  |
+
+| 0.0 | 1.5 | Rule broken |
+| --- | --- | --- |
+| c natural | d quarter-flat | - |
+| -- | c three-quarter-sharp | - |
+| d double-flat | d quarter-flat | unison |
+| -- | c three-quarter-sharp | reacharound  |
+| b sharp | d quarter-flat | |
+| -- | c three-quarter-sharp | - |

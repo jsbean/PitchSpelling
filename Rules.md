@@ -19,7 +19,7 @@ Rules return a cost value, [0,1], which is later scaled by the program to allow 
 
 <a id="node-level"></a>
 # Node-level rules
-### `(SpelledPitchClass) -> Float`
+#### `(SpelledPitchClass) -> Float`
 
 The following rules are applied to single `SpelledPitchClass` values, without consideration of the surrounding harmonic or melodic context.
 
@@ -47,7 +47,7 @@ _maybe this should use b, db, and bb instead of just b--this would overlap with 
 
 <a id="edge-level"></a>
 # Edge-level rules
-`(SpelledPitchClass) -> (SpelledPitchClass) -> Float`
+#### `(SpelledPitchClass) -> (SpelledPitchClass) -> Float`
 
 ### R<sub>e1</sub>: avoid unisons (all unisons are augmented since we use a set of unique elements going into the problem)
 * 1 if Al = Bl
@@ -65,7 +65,7 @@ _not sure how to implement this one, but I think you have to include checks on t
 
 <a id="graph-level"></a>
 # Graph-level rules
-`[SpelledPitchClass] -> Float`
+#### `[SpelledPitchClass] -> Float`
 
 ### R<sub>g1</sub>: avoid rough spellings in opposite directions
 * 1 if for any A, B in S, sign(Aq) * sign(Bq) = -1

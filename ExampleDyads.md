@@ -32,7 +32,7 @@
 | 0.0 | 1.5 | Rule broken |
 | --- | --- | --- |
 | c natural | d quarter-flat | - |
-| -- | c three-quarter-sharp | - |
+| -- | c three-quarter-sharp | unison |
 | d double-flat | d quarter-flat | unison |
 | -- | c three-quarter-sharp | reacharound  |
 | b sharp | d quarter-flat | dim/aug |

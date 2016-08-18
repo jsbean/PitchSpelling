@@ -1,4 +1,4 @@
-The following are examples of dyads of spelled pitches, for the purpose of generating the rules that can be applied globally. 
+The following are examples of dyads of spelled pitches, for the purpose of generating the rules that can be applied globally. [Focus is on edge-level rules.]
 
 | 0.0 | 0.25 | Rule broken |
 | --- | ---  | --- |
@@ -7,16 +7,19 @@ The following are examples of dyads of spelled pitches, for the purpose of gener
 | -- | d three-quarter-flat down | -|
 | --  | d bb up | - |
 | -- | b sharp up | reacharound |
+| -- | b three-quarter-sharp down | reacharound |
 | d double-flat | c natural up | reacharound |
 | -- | c quarter-sharp-down 	| reacharound, flat/sharp |
 | -- | d three-quarter-flat down | unison |
 | -- | d double-flat up | unison |
 | -- | b sharp up	| reacharound, dim/aug |
+| -- | b three-quarter-sharp down | reacharound, dim/aug |
 | b sharp | c natural up | - |
 | -- | c quarter-sharp down | - |
 | -- | d three-quarter-flat down | flat/sharp |
 | -- | d double-flat up | flat/sharp, dim/aug |
 | -- | b sharp up | unison |
+| -- | b three-quarter-sharp down | unison |
 
 
 | 0.0 | 1.0 | Rule broken |
@@ -25,7 +28,7 @@ The following are examples of dyads of spelled pitches, for the purpose of gener
 | -- | b double-sharp | reacharound |
 | -- | d flat | - |
 | d double-flat | c sharp | reacharound |
-| -- | b double-sharp | dim/aug |
+| -- | b double-sharp | dim/aug, reacharound |
 | -- | d flat | unison |
 | b sharp | c sharp | - |
 | -- | b double-sharp | unison |

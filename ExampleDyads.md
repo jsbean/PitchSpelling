@@ -132,3 +132,24 @@ The following are examples of dyads of spelled pitches, for the purpose of gener
 | -- | d three-quarter-flat up | unison, eighth-tone direction |
 | -- | b three-quarter-sharp up | reacharound, dim/aug, eighth-tone direction, flat/sharp |
 | -- | b double-sharp down | reacharound, dim/aug, flat/sharp |
+
+| 3.5 | 10.25 | rule broken |
+| --- | --- | --- |
+| d#+ | a#+ down | |
+| | a# up | |
+| | bd down | flat/sharp, aug/dim |
+| | bb up | flat/sharp, aug/dim |
+| | cdb down | flat/sharp, aug/dim |
+| | dbb up | flat/sharp, aug/dim |
+| ed | a#+ down | f/s, a/d |
+| | a# up | f/s, a/d |
+| | bd down | |
+| | bb up | |
+| | cdb down | a/d |
+| | cbb up | a/d |
+| fdb | a#+ down | a/d, f/s |
+| | a# up | a/d, f/s |
+| | bd down | a/d |
+| | bb up | a/d |
+| | cdb down | |
+| | cbb up | |

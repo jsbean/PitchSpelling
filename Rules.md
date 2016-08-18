@@ -10,7 +10,7 @@ Rules can be applied at the [**node-**](#node-level), [**edge-**](#edge-level), 
   - e.g., "avoid augmented unisons"
 - **Graph-level rules**:
   - Applied to entire graph
-  - Avoid "double jeopardy" — penalize only once if there are one or more instances of rule-breaking
+  - Does not apply "double jeopardy" — penalizes only once if there are one or more instances of rule-breaking
   - e.g., "avoid eighth tone arrow direction conflicts"
   
 Rules return a cost value, [0,1], which is later scaled by the program to allow rule weighting and user-controlled preferences.

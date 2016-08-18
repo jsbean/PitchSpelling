@@ -15,16 +15,18 @@ Rules can be applied at the [**node-**](#node-level), [**edge-**](#edge-level), 
   
 Rules return a cost value, [0,1], which is later scaled by the program to allow rule weighting and user-controlled preferences.
 
+---
+
 <a id="node-level"></a>
 # Node-level rules
-`(SpelledPitchClass) -> Float`
+### `(SpelledPitchClass) -> Float`
 
-### R<sub>n1</sub>: avoid double sharps or flats
-* 1 if Aq is bb or x
+### R<sub>n1</sub>: Double sharps / double flats
+* 1 if **A<sub>q</sub>** is `bb` or `x`
 * 0 otherwise
 
 ### R<sub>n2</sub>: avoid bad enharmonics
-* 1 if (Al, Aq) = B# or Cb or E# or Fb
+* 1 if (**A<sub>l</sub>**, **A<sub>q</sub>**) = `(B,#)` or `(C,b)` or `(E,#)` or `(F,b)`
 * 0 otherwise
 
 _maybe this should use b, db, and bb instead of just b--this would overlap with other rules but maybe this is a good thing?_

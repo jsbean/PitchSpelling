@@ -68,10 +68,16 @@ The following rules are applied to dyads of `SpelledPitchClass` values.
 
 <a id="crossovers/reacharound"></a>
 ### R<sub>e2</sub>: Crossovers 
-* `1` if ?
+* `1` if **A<sub>pitch</sub>** `<` **B<sub>pitch</sub>** `!=` **A<sub>spelling</sub>** `<` **B<sub>spelling</sub>**
 * `0` otherwise
 
-> e.g., (c, flat) and (b, sharp) for instance
+> Avoid spelling pairs like (60, c), (60.25, b sharp up)
+
+> This assumes that `letterName`, `quarterStep`, and `eighthStep` are combined into a single structure, which is `Comparable`, as is done [here](https://github.com/dn-m/PitchSpellingTools/blob/interval-classifier/PitchSpellingTools/PitchSpelling%2BComparable.swift).
+
+> This can be expanded for the sake of uniformity, or we can collect these properties here into a structure as it is above.
+
+
 
 _not sure how to implement this one, but I think you have to include checks on the quarter-tone directions_
 

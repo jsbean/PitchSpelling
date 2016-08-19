@@ -69,7 +69,7 @@ The following rules are applied to dyads of `SpelledPitchClass` values.
 <a id="crossovers/reacharound"></a>
 ### R<sub>e2</sub>: Crossovers 
 * `1` if **A<sub>pitch</sub>** `<` **B<sub>pitch</sub>** `!=` **A<sub>spelling</sub>** `<` **B<sub>spelling</sub>**
-* `1` if `sign[(A<sub>pitch</sub> - B<sub>pitch</sub> mod 12) - (B<sub>pitch</sub> - A<sub>pitch</sub> mod 12)] * sign[(A<sub>letterName</sub> - B<sub>letterName</sub> mod 7) - (B<sub>letterName</sub> - A<sub>letterName</sub> mod 7)] == -1` 
+* `1` if `sign`[(**A<sub>pitch</sub>** - **B<sub>pitch</sub>** `mod 12`) - (**B<sub>pitch</sub>** - **A<sub>pitch</sub>** `mod 12`)] x `sign`[(**A<sub>letterName</sub>** - **B<sub>letterName</sub>** `mod 7`) - (**B<sub>letterName</sub>** - **A<sub>letterName</sub>** `mod 7`)] == `-1` 
 * `0` otherwise
 
 > Avoid spelling pairs like (60, c), (60.25, b sharp up)

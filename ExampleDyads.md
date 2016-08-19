@@ -174,6 +174,7 @@ The following are examples of dyads of spelled pitches, for the purpose of gener
 
 
 | 5.25, 2.25 -> | Cx up | D up | D+ down | Ebb up | Edb down |
+| --- | --- | --- | --- | --- | --- |
 | E# up | | a/d | 8t dir, a/d | f/s, unison, reacharound | f/s, unison, 8t dir, r.a. |
 | E#+ down | 8t dir | 8t dir, a/d | a/d | f/s, unison, 8t dir, r.a. | f/s, unison, r.a. |
 | F up | a/d | | 8t dir | a/d | 8t dir, a/d |

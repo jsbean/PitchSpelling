@@ -179,5 +179,5 @@ The following are examples of dyads of spelled pitches, for the purpose of gener
 | E#+ down | 8t dir | 8t dir, a/d | a/d | f/s, unison, 8t dir, r.a. | f/s, unison, r.a. |
 | F up | a/d | | 8t dir | a/d | 8t dir, a/d |
 | F+ down | 8t dir, a/d | 8t dir | | 8t dir, a/d | a/d |
-| Gbb up | f/s, a/d | | f/s, a/d, 8t dir | | 8t dir |
-| Gdb down | f/s, a/d, 8t dir | 8t dir | f/s, a/d | 8t dir | |
+| Gbb up | f/s, a/d | a/d | f/s, a/d, 8t dir | | 8t dir |
+| Gdb down | f/s, a/d, 8t dir | 8t dir, a/d | f/s, a/d | 8t dir | |

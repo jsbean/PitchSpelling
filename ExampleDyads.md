@@ -153,3 +153,21 @@ The following are examples of dyads of spelled pitches, for the purpose of gener
 | | bb up | a/d |
 | | cdb down | |
 | | cbb up | |
+
+| 9 | 2.25 | rule broken |
+| --- | --- | --- |
+| gx | cx up | |
+| | d+ down | a/d |
+| | d up | a/d
+| | edb down | a/d, f/s |
+| | ebb up | a/d, f/s |
+| a | cx up | a/d |
+| | d+ down | |
+| | d up | |
+| | edb down | a/d |
+| | ebb up | a/d |
+| bbb | cx up | a/d, f/s |
+| | d+ down | a/d, f/s |
+| | d up | a/d |
+| | edb down | |
+| | ebb up | |

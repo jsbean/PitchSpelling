@@ -166,27 +166,6 @@ ChordSpellerEdgeRule_AugDim : ChordSpellerEdgeRule {
 	}
 }
 
-ChordSpellerEdgeRule_Crossover : ChordSpellerEdgeRule {
-	classvar <>costMul = 1;
-	*apply {arg in; ^this.prApplyRule(in) * costMul;}
-	*prApplyRule {
-		arg nodes;
-		var lhs, rhs, qtdir, pcross, res;
-		nodes = ChordSpellerEdgeRule_AugDim.switchFunc(nodes);
-		lhs = nodes[0];
-		rhs = nodes[1];
-
-		qtdir = (rhs.quarterTone - lhs.quarterTone).sign; // should be negative
-		pcross = (rhs.pitchClass - lhs.pitchClass % 12) >= 6; // should be true
-
-		res = (qtdir == (-1)) && (pcross) && (lhs.letterName != rhs.letterName);
-		res = res.binaryValue;
-		// if((res == 1)) {"% %\n".postf(lhs, rhs)};
-		// ^res;
-		^res;
-	}
-}
-
 ChordSpellerGraphRule_FlatsSharps : ChordSpellerGraphRule {
 	classvar <>costMul = 1;
 	*apply {arg in; ^this.prApplyRule(in) * costMul;}
@@ -234,6 +213,7 @@ ChordSpeller {
 	var <>bDebug = false;
 	var <>iDebugDepth = 5;
 
+	classvar nodeCosts;
 	classvar spellingsList;
 
 	*new {
@@ -244,18 +224,17 @@ ChordSpeller {
 	init {
 		maxCost = 1000;
 		bestGraphs = List[];
-		ChordSpellerNodeRule_DoubleSharpFlat.costMul_(100);
-		ChordSpellerNodeRule_BadEnharmonic.costMul_(10);
+		ChordSpellerNodeRule_DoubleSharpFlat.costMul_(2);
 		ChordSpellerEdgeRule_Unison.costMul_(2);
 		ChordSpellerEdgeRule_AugDim.costMul_(4);
-		ChordSpellerEdgeRule_Crossover.costMul_(1000);
+		ChordSpeller.calcNodeCosts;
 
 	}
 
 	spell {
 		this.init;
 		this.prSpellFunc([], pitchClassList, 0, 0, 0);
-		"best graphs (cost %):".format(maxCost).postln;
+		"best graphs:".postln;
 		bestGraphs.do {
 			arg graph, i;
 			postln("% - %".format(i+1, graph.collect(_.asString)));
@@ -376,13 +355,8 @@ ChordSpeller {
 
 	*addedNodeEdgeCost {
 		arg graph, node;
-
-		var cost = 0;
-
-		ChordSpellerNodeRule.subclasses.do {
-			|class|
-			cost = cost + class.apply(node);
-		};
+		var index = (node.letterName * 27) + (node.quarterTone + 4 * 3) + (node.eighthTone + 1);
+		var cost = nodeCosts[index];
 		ChordSpellerEdgeRule.subclasses.do {
 			|class|
 			graph.do {
@@ -404,6 +378,21 @@ ChordSpeller {
 		};
 
 		^cost
+	}
+
+	*calcNodeCosts {
+		nodeCosts = Array.newClear(189);
+		for(0, 6) {
+			|l|
+			for(-4, 4) {
+				|q|
+				for(-1,1) {
+					|e|
+					var cost = ChordSpellerNodeRule.subclasses.collect(_.apply(SpelledPitchClass([0,2,4,5,7,9,11]@l + (q/2) + (e/4), l, q, e))).sum;
+					nodeCosts[(l * 27) + (q + 4 * 3) + (e + 1)] = cost;
+				}
+			}
+		}
 	}
 
 

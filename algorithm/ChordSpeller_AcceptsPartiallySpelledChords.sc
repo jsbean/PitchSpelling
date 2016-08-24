@@ -8,7 +8,7 @@ SpelledPitchClass {
 	}
 
 	asString {
-		if(letterName.isNil || quarterTone.isNil || eighthTone.isNil) {
+		if(this.isSpelled.not) {
 			^"unspelled %".format(pitchClass);
 		} {
 			var ln = SpelledPitchClass.asString_ln(letterName);
@@ -16,6 +16,10 @@ SpelledPitchClass {
 			var et = SpelledPitchClass.asString_et(eighthTone);
 			^"%% % (%)".format(ln, qt, et, pitchClass).replace("  ", " ");
 		}
+	}
+
+	isSpelled {
+		^(letterName.isNil || quarterTone.isNil || eighthTone.isNil).not;
 	}
 
 	// string conversion for letter names
@@ -238,7 +242,7 @@ ChordSpeller {
 
 	*new {
 		arg pitchClassList;
-		^super.newCopyArgs(pitchClassList).init;
+		^super.newCopyArgs(pitchClassList.deepCopy).init;
 	}
 
 	init {
@@ -249,6 +253,15 @@ ChordSpeller {
 		ChordSpellerEdgeRule_Unison.costMul_(2);
 		ChordSpellerEdgeRule_AugDim.costMul_(4);
 		ChordSpellerEdgeRule_Crossover.costMul_(1000);
+
+		// cast PCList to a list of spelled pitch classes if they're not
+		pitchClassList.size.do {
+			|i|
+			var pc = pitchClassList[i];
+			if(pc.isKindOf(SimpleNumber)) {pitchClassList[i] = SpelledPitchClass(pc, nil,nil,nil)} {
+				if(pc.isKindOf(SpelledPitchClass).not) {Error("unusable object in list (index %): %".format(i, pc)).throw};
+			}
+		};
 
 	}
 
@@ -371,7 +384,7 @@ ChordSpeller {
 		};
 
 		// index = pc * 4 (0.25 -> 1, 0.5 -> 2)
-		^spellingsList[pc*4];
+		^if(pc.isSpelled) {[pc]} {spellingsList[pc.pitchClass*4]};
 	}
 
 	*addedNodeEdgeCost {
